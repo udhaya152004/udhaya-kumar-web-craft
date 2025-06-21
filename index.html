@@ -1,24 +1,446 @@
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>udhaya-kumar-web-craft</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <title>Udhaya Kumar S - Full Stack Developer</title>
+    <meta name="description" content="Full Stack Developer specializing in React.js, Node.js, and modern web technologies" />
+    <meta name="author" content="Udhaya Kumar S" />
 
-    <meta property="og:title" content="udhaya-kumar-web-craft" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
-
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- AOS CSS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
   </head>
 
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top custom-navbar">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#home">
+          <span class="text-orange">Udhaya</span> Kumar
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#resume">Resume</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero-section d-flex align-items-center">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h1 class="display-4 fw-bold mb-3">
+              Crafting Digital Experiences with <span class="text-orange">Passion</span>
+            </h1>
+            <p class="lead mb-4 text-muted">
+              Full Stack Developer | Frontend Enthusiast | Responsive UI Builder
+            </p>
+            <div class="hero-buttons">
+              <a href="#projects" class="btn btn-orange btn-lg me-3">
+                <i class="fas fa-eye me-2"></i>View My Work
+              </a>
+              <a href="#contact" class="btn btn-outline-orange btn-lg">
+                <i class="fas fa-handshake me-2"></i>Let's Connect
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="hero-image text-center">
+              <i class="fas fa-code hero-icon"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-5" data-aos="fade-right">
+            <div class="about-image text-center">
+              <div class="profile-placeholder">
+                <i class="fas fa-user-circle"></i>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-7" data-aos="fade-left">
+            <div class="about-content">
+              <h2 class="section-title mb-4">About <span class="text-orange">Me</span></h2>
+              <p class="mb-4">
+                Hi, I'm <strong>Udhaya Kumar S</strong>, a Full Stack Developer based in Chengalpattu, India. 
+                I specialize in frontend development with React.js, HTML, CSS, and JavaScript, and build 
+                backend functionality using Node.js and MongoDB.
+              </p>
+              <p class="mb-0">
+                I enjoy crafting elegant, user-friendly web experiences and continuously improving my 
+                full-stack skills. My passion lies in creating responsive, accessible, and performant 
+                web applications that deliver exceptional user experiences.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">My <span class="text-orange">Resume</span></h2>
+          <p class="lead text-muted">My professional journey and qualifications</p>
+        </div>
+
+        <!-- Summary -->
+        <div class="row mb-5">
+          <div class="col-lg-8 mx-auto" data-aos="fade-up">
+            <div class="resume-card">
+              <h3 class="text-orange mb-3">
+                <i class="fas fa-user me-2"></i>Professional Summary
+              </h3>
+              <p>
+                Passionate Frontend Developer experienced in building responsive UIs using React.js, HTML, CSS, JavaScript. 
+                Skilled in backend integration using Node.js and MongoDB. Focused on clean code, intuitive design, and continual skill enhancement.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Experience -->
+        <div class="row mb-5">
+          <div class="col-lg-10 mx-auto">
+            <div class="timeline">
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="resume-card">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                      <div>
+                        <h4 class="text-orange mb-1">Full Stack Development Intern</h4>
+                        <h6 class="text-muted mb-0">NaNLogical Consultancy Services Pvt Ltd, Chennai</h6>
+                      </div>
+                      <span class="badge bg-orange">Jan 2025 – Mar 2025</span>
+                    </div>
+                    <ul class="mb-3">
+                      <li>Designed responsive CRM UI components using React.js & Bootstrap</li>
+                      <li>Integrated backend in Node.js and MongoDB</li>
+                      <li>Implemented reusable components and clean modular frontend</li>
+                      <li>Collaborated in a fast-paced team on HRMS application</li>
+                    </ul>
+                    <a href="#" class="btn btn-sm btn-outline-orange">
+                      <i class="fas fa-certificate me-1"></i>View Certificate
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Education -->
+        <div class="row mb-5">
+          <div class="col-lg-10 mx-auto">
+            <div class="timeline">
+              <div class="timeline-item" data-aos="fade-up">
+                <div class="timeline-marker"></div>
+                <div class="timeline-content">
+                  <div class="resume-card">
+                    <div class="d-flex justify-content-between align-items-start mb-3">
+                      <div>
+                        <h4 class="text-orange mb-1">Bachelor of Computer Application</h4>
+                        <h6 class="text-muted mb-0">Hindustan College Of Arts & Science, Padur, Chennai</h6>
+                      </div>
+                      <span class="badge bg-orange">2022 – 2025</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Resume Download -->
+        <div class="text-center" data-aos="fade-up">
+          <a href="Udhaya_Kumar_resume.pdf" download class="btn btn-orange btn-lg">
+            <i class="fas fa-download me-2"></i>Download Resume
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">My <span class="text-orange">Projects</span></h2>
+          <p class="lead text-muted">Showcasing my latest work and achievements</p>
+        </div>
+
+        <div class="row">
+          <!-- Project 1 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up">
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-building"></i>
+              </div>
+              <div class="project-content">
+                <h5 class="project-title">Apartment Management System</h5>
+                <p class="project-description">
+                  Built full-featured apartment portal with laundry and pool booking functionality. 
+                  UI deployed on Netlify with state management via localStorage.
+                </p>
+                <div class="project-tech mb-3">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">Node.js</span>
+                  <span class="tech-tag">MongoDB</span>
+                </div>
+                <a href="#" class="btn btn-orange btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 2 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-cloud-sun"></i>
+              </div>
+              <div class="project-content">
+                <h5 class="project-title">Weather Checker</h5>
+                <p class="project-description">
+                  Fetches live weather data using open API with customized UI. 
+                  Built mobile-first with responsive design and media queries.
+                </p>
+                <div class="project-tech mb-3">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">API</span>
+                </div>
+                <a href="#" class="btn btn-orange btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Project 3 -->
+          <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="project-card">
+              <div class="project-image">
+                <i class="fas fa-user-tie"></i>
+              </div>
+              <div class="project-content">
+                <h5 class="project-title">Portfolio Website</h5>
+                <p class="project-description">
+                  Animated scroll effects with clean layout and responsive design. 
+                  Professional portfolio showcasing skills and projects.
+                </p>
+                <div class="project-tech mb-3">
+                  <span class="tech-tag">HTML</span>
+                  <span class="tech-tag">CSS</span>
+                  <span class="tech-tag">Bootstrap</span>
+                  <span class="tech-tag">AOS</span>
+                </div>
+                <a href="#" class="btn btn-orange btn-sm">
+                  <i class="fas fa-external-link-alt me-1"></i>Demo
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">My <span class="text-orange">Services</span></h2>
+          <p class="lead text-muted">What I can do for you</p>
+        </div>
+
+        <div class="row">
+          <!-- Service 1 -->
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-code"></i>
+              </div>
+              <h5 class="service-title">Web Development</h5>
+              <p class="service-description">
+                Full website creation from scratch using modern stack and best practices.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 2 -->
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-palette"></i>
+              </div>
+              <h5 class="service-title">UI/UX Design</h5>
+              <p class="service-description">
+                Clean and structured layout design using modern frameworks and animations.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 3 -->
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-server"></i>
+              </div>
+              <h5 class="service-title">Backend Integration</h5>
+              <p class="service-description">
+                REST APIs and database integration with Node.js, Express, and MongoDB.
+              </p>
+            </div>
+          </div>
+
+          <!-- Service 4 -->
+          <div class="col-lg-3 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-card text-center">
+              <div class="service-icon">
+                <i class="fas fa-mobile-alt"></i>
+              </div>
+              <h5 class="service-title">Responsive Design</h5>
+              <p class="service-description">
+                Mobile-first approach using media queries and responsive grid systems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5">
+      <div class="container">
+        <div class="text-center mb-5" data-aos="fade-up">
+          <h2 class="section-title">Get In <span class="text-orange">Touch</span></h2>
+          <p class="lead text-muted">Let's discuss your next project</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="contact-form" data-aos="fade-up">
+              <form action="mailto:udhayakumar46199@gmail.com" method="POST" enctype="text/plain">
+                <div class="row">
+                  <div class="col-md-6 mb-3" data-aos="fade-in" data-aos-delay="100">
+                    <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+                  </div>
+                  <div class="col-md-6 mb-3" data-aos="fade-in" data-aos-delay="200">
+                    <input type="email" class="form-control" placeholder="Your Email" name="email" required>
+                  </div>
+                </div>
+                <div class="mb-3" data-aos="fade-in" data-aos-delay="300">
+                  <textarea class="form-control" rows="5" placeholder="Your Message" name="message" required></textarea>
+                </div>
+                <div class="text-center" data-aos="fade-in" data-aos-delay="400">
+                  <button type="submit" class="btn btn-orange btn-lg">
+                    <i class="fas fa-paper-plane me-2"></i>Send Message
+                  </button>
+                </div>
+              </form>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="contact-info mt-5" data-aos="fade-up">
+              <div class="row text-center">
+                <div class="col-md-4 mb-3">
+                  <div class="contact-item">
+                    <i class="fas fa-envelope text-orange mb-2"></i>
+                    <p class="mb-0">udhayakumar46199@gmail.com</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="contact-item">
+                    <i class="fas fa-phone text-orange mb-2"></i>
+                    <p class="mb-0">+91 93422 04353</p>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="contact-item">
+                    <i class="fab fa-linkedin text-orange mb-2"></i>
+                    <p class="mb-0">
+                      <a href="https://linkedin.com/in/udhayakumar15" target="_blank" class="text-decoration-none">
+                        linkedin.com/in/udhayakumar15
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+      <div class="container">
+        <p class="mb-0">&copy; 2025 Udhaya Kumar S. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop" class="scroll-to-top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JS -->
+    <script src="script.js"></script>
   </body>
 </html>
